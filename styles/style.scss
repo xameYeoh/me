@@ -161,7 +161,7 @@ a {
     @include responsive-image-background("../images/header-background.png");
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
