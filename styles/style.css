@@ -209,7 +209,7 @@ li.listMail {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background-image: url(../images/top-back.png);
+  background-image: url(../sources/images/top-back.png);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 44%;
