@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "reset.scss";
 @import "fonts.scss";
 
@@ -242,10 +243,260 @@ a {
             width: 11px;
             height: 11px;
             cursor: pointer;
+=======
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.top {
+    min-height: 768px;
+    background: linear-gradient(0deg, #ebf3fb 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.topContent {
+    display: flex;
+    flex-direction: column;
+    min-height: 768px;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+}
+
+.footerTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    background: #316099;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.footerLinks {
+    align-self: center;
+}
+
+.footerButton-1 {
+    background: #5a98d0;
+    padding: 15px 80px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer > hr {
+    margin-top: 96px;
+    width: auto;
+    opacity: 0.4;
+    /* white */
+    border: 1px solid #ffffff;
+}
+
+.footerDescription {
+    padding-top: 90px;
+    width: 495px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.footerDescription > .paragraph {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    letter-spacing: 0.05em;
+    /* white */
+    color: #ffffff;
+    opacity: 0.6;
+    padding-top: 32px;
+}
+
+.AllRightsReserved {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    letter-spacing: 0.05em;
+    /* white */
+    color: #ffffff;
+    opacity: 0.6;
+    padding: 64px 0px;
+}
+
+.footerDescription > .header3 {
+    width: 350px;
+    text-align: left;
+}
+
+.footerBottom {
+    width: 100%;
+    margin-top: 64px;
+}
+
+.rightsReserved {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footerContacts > ul {
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footList {
+    padding-left: 19px;
+    list-style-position: outside;
+}
+
+li.listText {
+    list-style-type: "A.";
+}
+
+li.listTelephone {
+    list-style-type: "T.";
+}
+
+li.listMail {
+    list-style-type: "E.";
+}
+
+.mainSlogan {
+    margin-top: 115px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    background-image: url(../sources/images/top-back.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 44%;
+}
+
+.cardLink {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5a98d0;
+    text-decoration: none;
+}
+
+.companyDescription {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.card {
+    width: 359px;
+    padding: 44px 32px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+
+.aboutCompany {
+    margin-top: 64px;
+}
+
+.what-we-do {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 96px;
+
+    .contacts {
+        padding-top: 78px;
+
+        img {
+            margin-bottom: 14px;
+        }
+
+        .contacts-Items {
+            .contacts-item {
+                margin-top: 40px;
+
+                ul {
+                    list-style-position: inside;
+                    list-style-type: none;
+
+                    li {
+                        margin-bottom: 16px;
+                        background-repeat: no-repeat;
+                        padding-left: 40px;
+                        line-height: 20px;
+                    }
+                }
+            }
+>>>>>>> 875dcdf33e836e2b3e157cac70f375f1da2af36a
         }
     }
 }
 
+<<<<<<< HEAD
 .slider {
     display: flex;
     justify-content: space-between;
@@ -1095,5 +1346,541 @@ a {
         &__info {
             flex-direction: column;
         }
+=======
+.contactsHeader {
+    text-align: center;
+    background-image: url(../images/ContactUs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 50px 0px 57px;
+}
+
+.ContactUsParagraph {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contactsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.mapWrapper {
+    width: 100%;
+    height: 480px;
+    display: flex;
+
+    iframe {
+        flex-grow: 1;
+    }
+}
+
+.contacts-item > h4 {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+li.site {
+    background-image: url(../images/web.svg);
+}
+
+li.phone {
+    background-image: url(../images/phone.svg);
+}
+
+li.email {
+    background-image: url(../images/mail.svg);
+}
+
+.sendForm {
+    background: #ffffff;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    padding: 56px 56px;
+    h4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1f3f68;
+        text-transform: uppercase;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1f3f68;
+    opacity: 0.8;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.projectImages {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_Image {
+    width: 100%;
+}
+
+.image_Text {
+    top: 64px;
+    right: 64px;
+    text-align: right;
+}
+
+.image_Text_mini {
+    left: 32px;
+    top: 32px;
+    right: auto;
+    text-align: left;
+}
+
+.image_Text,
+.image_Text_mini {
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+}
+
+.projectItem {
+    position: relative;
+    flex-grow: 1;
+}
+
+.project_Heading {
+    margin-top: 64px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+    margin-bottom: 64px;
+}
+
+.project_Heading > p {
+    margin-top: 32px;
+}
+
+.margin_Item {
+    margin-right: 32px;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1f3f68;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.topParagraph {
+    width: 400px;
+}
+
+.cardPic {
+    margin-bottom: 50px;
+}
+
+.header1 {
+    width: 504px;
+    color: #1f3f68;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+}
+
+.header2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
+
+.header3 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.header4 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1f3f68;
+    margin-bottom: 14px;
+}
+
+.inputElems {
+    border: 1px solid #356ead;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    padding: 21px 42px;
+}
+
+.subButton {
+    margin-top: 72px;
+    background: #5a98d0;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    /* shadow1 */
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    padding: 23px 183px;
+    border: none;
+}
+
+.topButton {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background: #5a98d0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 71px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .mainSlogan {
+        background-position: right 240px;
+        margin-bottom: 0;
+        padding-bottom: 80px;
+    }
+
+    .what-we-do {
+        flex-direction: column;
+        margin-top: 64px;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .footerButton-1 {
+        padding: 8px 30px;
+    }
+
+    .footerTop {
+        width: auto;
+    }
+
+    .footerContacts > ul {
+        display: block;
+    }
+
+    .footerContacts > ul > li {
+        margin-bottom: 25px;
+    }
+
+    .footerBottom {
+        width: 75%;
+    }
+
+    .footerDescription {
+        padding-top: 47px;
+    }
+
+    .project_Heading {
+        margin-top: 100px;
+    }
+
+    .image_Text_mini,
+    .image_Text {
+        font-size: 28px;
+    }
+
+    .contactsWrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+    .mapWrapper {
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sendForm {
+        margin-top: 64px;
+    }
+
+    .contactsHeader {
+        margin: 46px 0px 64px;
+    }
+
+    footer {
+        margin-top: 64px;
+    }
+
+    .contacts {
+        padding-top: 0;
+    }
+
+    .contacts-Items {
+        width: 301px;
+    }
+}
+
+@media (max-width: 667px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    header {
+        padding-top: 24px;
+    }
+
+    .mainSlogan {
+        margin-top: 36px;
+        margin-bottom: 0px;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .aboutCompany {
+        margin-top: 48px;
+    }
+
+    .header1 {
+        width: 100%;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin-bottom: 12px;
+    }
+
+    .topParagraph {
+        text-align: center;
+    }
+
+    .topContent {
+        min-height: auto;
+    }
+
+    .header3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .paragraph {
+        width: 100%;
+    }
+
+    .topButton {
+        margin-top: 32px;
+        padding: 4px 8px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 26px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .what-we-do {
+        margin-top: 32px;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .project_Heading {
+        margin-bottom: 82px;
+        margin-top: 30px;
+    }
+
+    .projectImages {
+        margin-top: 16px;
+        flex-direction: column;
+    }
+
+    .margin_Item {
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+
+    .image_Text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .image_Text_mini {
+        font-size: 16px;
+        line-height: 19px;
+        top: 26px;
+        left: 16px;
+    }
+
+    footer {
+        margin-top: 64px;
+    }
+
+    .footerTop {
+        flex-direction: column;
+    }
+
+    .footerDescription {
+        width: auto;
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    .footerDescription > .header3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footerButton-1 {
+        padding: 8px 15px;
+    }
+
+    .footerLinks {
+        margin-top: 27px;
+    }
+
+    footer > hr {
+        margin-top: 41px;
+    }
+
+    .AllRightsReserved {
+        text-align: center;
+        padding: 20px 0px 32px;
+    }
+
+    .footerBottom {
+        margin-top: 32px;
+    }
+
+    .footerContacts > ul > li {
+        list-style-type: decimal;
+        margin-bottom: 17px;
+    }
+
+    .sendForm {
+        padding: 36px 36px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .subButton {
+        padding: 10px 60px;
+        margin-top: 46px;
+    }
+
+    .mapWrapper {
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .ContactUsParagraph {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .contactsHeader {
+        margin: 46px 0px;
+    }
+
+    .sendForm > h4 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .form-text {
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+
+    .contactsWrapper {
+        margin-bottom: 32px;
+    }
+
+    footer.contacts-footer {
+        margin-top: 32px;
+>>>>>>> 875dcdf33e836e2b3e157cac70f375f1da2af36a
     }
 }
