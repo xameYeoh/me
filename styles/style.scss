@@ -30,10 +30,6 @@ body {
     flex-direction: column;
 }
 
-.content {
-    flex-grow: 1;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -45,6 +41,33 @@ header {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+
+section{
+    &.about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        .card{
+            width: fit-content;
+        }
+        .paragraph{
+            font-size: large;
+        }
+        .memories{
+            width: 100%;
+            display: flex;
+            padding: 50px 0 0 0;
+            justify-content: space-between;
+            .card{
+                width: 359px;
+                height: 100%;
+                justify-content: space-between;
+            }
+        }
+    }
+    
 }
 
 footer {
@@ -408,6 +431,7 @@ form {
 
 .topParagraph {
     width: 400px;
+    font-size: large;
 }
 
 .cardPic {
@@ -443,6 +467,7 @@ form {
     line-height: 46px;
     text-align: center;
     letter-spacing: 0.05em;
+    margin: 0 0 25px 0;
 }
 
 .header4 {

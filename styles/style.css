@@ -41,12 +41,6 @@ body {
           flex-direction: column;
 }
 
-.content {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,6 +63,49 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+section.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+
+section.about-me .card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+section.about-me .paragraph {
+  font-size: large;
+}
+
+section.about-me .memories {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.about-me .memories .card {
+  width: 359px;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer {
@@ -492,6 +529,7 @@ form {
 
 .topParagraph {
   width: 400px;
+  font-size: large;
 }
 
 .cardPic {
@@ -527,6 +565,7 @@ form {
   line-height: 46px;
   text-align: center;
   letter-spacing: 0.05em;
+  margin: 0 0 25px 0;
 }
 
 .header4 {
