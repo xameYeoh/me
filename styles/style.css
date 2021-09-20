@@ -9,8 +9,9 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 .top {
@@ -76,7 +77,9 @@ section.about-me {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 50px;
 }
 
 section.about-me .card {
@@ -87,9 +90,10 @@ section.about-me .card {
 
 section.about-me .paragraph {
   font-size: large;
+  margin: 0 0 25px 0;
 }
 
-section.about-me .memories {
+section.about-me .universities {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,7 +104,7 @@ section.about-me .memories {
           justify-content: space-between;
 }
 
-section.about-me .memories .card {
+section.about-me .universities .card {
   width: 359px;
   height: 100%;
   -webkit-box-pack: justify;
@@ -248,7 +252,7 @@ li.listMail {
           flex-grow: 1;
   background-image: url(../sources/images/top-back.png);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right top;
   background-size: 44%;
 }
 
@@ -292,10 +296,11 @@ li.listMail {
 
 .aboutCompany {
   margin-top: 64px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .what-we-do {
-  margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,6 +311,11 @@ li.listMail {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.project {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .contactsWrapper {
@@ -620,13 +630,8 @@ form {
   margin-top: 71px;
 }
 
-@media (max-width: 1024px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+@media (max-width: 1200px) {
   .mainSlogan {
-    background-position: right 240px;
     margin-bottom: 0;
     padding-bottom: 80px;
   }
@@ -700,10 +705,9 @@ form {
   }
 }
 
-@media (max-width: 667px) {
+@media (max-width: 790px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
   }
   .top {
     min-height: 376px;
@@ -768,8 +772,23 @@ form {
   .what-we-do {
     margin-top: 32px;
   }
-  .card {
-    width: auto;
+  .about-me {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .universities {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .project_Heading {
     margin-bottom: 82px;

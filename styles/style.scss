@@ -9,8 +9,9 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 32px;
 }
 
 .top {
@@ -48,14 +49,16 @@ section{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 50px;
+        box-sizing: border-box;
+        padding-top: 50px;
         .card{
             width: fit-content;
         }
         .paragraph{
             font-size: large;
+            margin: 0 0 25px 0;
         }
-        .memories{
+        .universities{
             width: 100%;
             display: flex;
             padding: 50px 0 0 0;
@@ -193,7 +196,7 @@ li.listMail {
     flex-grow: 1;
     background-image: url(../sources/images/top-back.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right top;
     background-size: 44%;
 }
 
@@ -230,13 +233,18 @@ li.listMail {
 
 .aboutCompany {
     margin-top: 64px;
+    box-sizing: border-box;
 }
 
 .what-we-do {
-    margin-top: 64px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+}
+
+.project{
+    box-sizing: border-box;
 }
 
 .contactsWrapper {
@@ -519,14 +527,9 @@ form {
     margin-top: 71px;
 }
 
-@media (max-width: 1024px) {
-    .container {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+@media (max-width: 1200px) {
 
     .mainSlogan {
-        background-position: right 240px;
         margin-bottom: 0;
         padding-bottom: 80px;
     }
@@ -607,10 +610,9 @@ form {
     }
 }
 
-@media (max-width: 667px) {
+@media (max-width: 790px) {
     .container {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding: 0 16px;
     }
 
     .top {
@@ -679,8 +681,14 @@ form {
         margin-top: 32px;
     }
 
-    .card {
-        width: auto;
+    .about-me{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .universities{
+        flex-direction: column;
+        align-items: center;
     }
 
     .project_Heading {
