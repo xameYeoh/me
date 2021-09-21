@@ -8,8 +8,15 @@ body {
     margin: 0px;
 }
 
-a{
+a {
     text-decoration: none;
+    color: #ffffff;
+    &:visited {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
 }
 
 .container {
@@ -42,39 +49,38 @@ header {
 }
 
 .footerTop {
+    padding-top: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-section{
-    &.about-me{
+section {
+    &.about-me {
         display: flex;
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
         padding-top: 50px;
-        .card{
+        .card {
             width: fit-content;
         }
-        .paragraph{
+        .paragraph {
             font-size: large;
             margin: 0 0 25px 0;
         }
-        .universities{
+        .universities {
             width: 100%;
             display: flex;
             padding: 50px 0 0 0;
             justify-content: space-between;
-            .card{
+            .card {
                 width: 359px;
                 height: 100%;
                 justify-content: space-between;
             }
         }
     }
-    
 }
 
 footer {
@@ -117,8 +123,7 @@ footer > hr {
 }
 
 .footerDescription {
-    padding-top: 90px;
-    width: 495px;
+    width: 100%;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -154,8 +159,9 @@ footer > hr {
 }
 
 .footerDescription > .header3 {
-    width: 350px;
+    width: auto;
     text-align: left;
+    margin: 0;
 }
 
 .footerBottom {
@@ -168,29 +174,28 @@ footer > hr {
     padding-bottom: 64px;
 }
 
+.footerContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .footerContacts > ul {
+    list-style-type: none;
+    padding: 25px 0 0 0;
     font-size: 16px;
     line-height: 26px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-}
-
-.footList {
-    padding-left: 19px;
-    list-style-position: outside;
-}
-
-li.listText {
-    list-style-type: "A.";
-}
-
-li.listTelephone {
-    list-style-type: "T.";
-}
-
-li.listMail {
-    list-style-type: "E.";
+    .footList {
+        display: flex;
+        align-items: center;
+        a {
+            height: 30px;
+            margin-right: 10px;
+        }
+    }
 }
 
 .mainSlogan {
@@ -244,10 +249,9 @@ li.listMail {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
 
-.project{
+.project {
     box-sizing: border-box;
 }
 
@@ -532,7 +536,6 @@ form {
 }
 
 @media (max-width: 1200px) {
-
     .mainSlogan {
         margin-bottom: 0;
         padding-bottom: 80px;
@@ -566,10 +569,6 @@ form {
 
     .footerBottom {
         width: 75%;
-    }
-
-    .footerDescription {
-        padding-top: 47px;
     }
 
     .project_Heading {
@@ -685,12 +684,12 @@ form {
         margin-top: 32px;
     }
 
-    .about-me{
+    .about-me {
         flex-direction: column;
         align-items: center;
     }
 
-    .universities{
+    .universities {
         flex-direction: column;
         align-items: center;
     }
@@ -765,7 +764,6 @@ form {
     }
 
     .footerContacts > ul > li {
-        list-style-type: decimal;
         margin-bottom: 17px;
     }
 

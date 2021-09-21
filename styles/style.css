@@ -10,6 +10,15 @@ body {
 
 a {
   text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 .container {
@@ -57,17 +66,16 @@ header {
 }
 
 .footerTop {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 section.about-me {
@@ -163,8 +171,7 @@ footer > hr {
 }
 
 .footerDescription {
-  padding-top: 90px;
-  width: 495px;
+  width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -200,8 +207,9 @@ footer > hr {
 }
 
 .footerDescription > .header3 {
-  width: 350px;
+  width: auto;
   text-align: left;
+  margin: 0;
 }
 
 .footerBottom {
@@ -214,36 +222,48 @@ footer > hr {
   padding-bottom: 64px;
 }
 
+.footerContacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .footerContacts > ul {
+  list-style-type: none;
+  padding: 25px 0 0 0;
   font-size: 16px;
   line-height: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.footList {
-  padding-left: 19px;
-  list-style-position: outside;
+.footerContacts > ul .footList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-li.listText {
-  list-style-type: "A.";
-}
-
-li.listTelephone {
-  list-style-type: "T.";
-}
-
-li.listMail {
-  list-style-type: "E.";
+.footerContacts > ul .footList a {
+  height: 30px;
+  margin-right: 10px;
 }
 
 .mainSlogan {
@@ -667,9 +687,6 @@ form {
   .footerBottom {
     width: 75%;
   }
-  .footerDescription {
-    padding-top: 47px;
-  }
   .project_Heading {
     margin-top: 100px;
   }
@@ -856,7 +873,6 @@ form {
     margin-top: 32px;
   }
   .footerContacts > ul > li {
-    list-style-type: decimal;
     margin-bottom: 17px;
   }
   .sendForm {
