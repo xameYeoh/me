@@ -8,9 +8,41 @@ body {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+    &:visited {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.link-icon {
+    fill: #ffffff;
+    &:hover {
+        fill: #5a98d0;
+    }
+}
+
+.skype-icon{
+    fill: #ffffff;
+    &:hover{
+        fill: #00aff0;
+    }
+}
+.github-icon{
+    fill: #ffffff;
+    &:hover{
+        fill: #000000;
+    }
+}
+
 .container {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 32px;
 }
 
 .top {
@@ -30,10 +62,6 @@ body {
     flex-direction: column;
 }
 
-.content {
-    flex-grow: 1;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -41,10 +69,39 @@ header {
 }
 
 .footerTop {
+    padding-top: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    &.about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding-top: 50px;
+        .card {
+            width: fit-content;
+        }
+        .paragraph {
+            font-size: large;
+            margin: 0 0 25px 0;
+        }
+        .universities {
+            width: 100%;
+            display: flex;
+            padding: 50px 0 0 0;
+            justify-content: space-between;
+            .card {
+                width: 359px;
+                height: 100%;
+                justify-content: space-between;
+            }
+        }
+    }
 }
 
 footer {
@@ -87,8 +144,7 @@ footer > hr {
 }
 
 .footerDescription {
-    padding-top: 90px;
-    width: 495px;
+    width: 100%;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -124,8 +180,9 @@ footer > hr {
 }
 
 .footerDescription > .header3 {
-    width: 350px;
+    width: auto;
     text-align: left;
+    margin: 0;
 }
 
 .footerBottom {
@@ -138,29 +195,29 @@ footer > hr {
     padding-bottom: 64px;
 }
 
+.footerContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .footerContacts > ul {
+    list-style-type: none;
+    padding: 25px 0 0 0;
     font-size: 16px;
     line-height: 26px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-}
-
-.footList {
-    padding-left: 19px;
-    list-style-position: outside;
-}
-
-li.listText {
-    list-style-type: "A.";
-}
-
-li.listTelephone {
-    list-style-type: "T.";
-}
-
-li.listMail {
-    list-style-type: "E.";
+    .footList {
+        display: flex;
+        align-items: center;
+        a {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+    }
 }
 
 .mainSlogan {
@@ -168,10 +225,10 @@ li.listMail {
     margin-bottom: 25px;
     box-sizing: border-box;
     flex-grow: 1;
-    background-image: url(../sources/images/top-back.png);
+    background-image: url(../sources/images/itog.png);
     background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 44%;
+    background-position: top right;
+    background-size: 30%;
 }
 
 .cardLink {
@@ -207,13 +264,17 @@ li.listMail {
 
 .aboutCompany {
     margin-top: 64px;
+    box-sizing: border-box;
 }
 
 .what-we-do {
-    margin-top: 64px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.project {
+    box-sizing: border-box;
 }
 
 .contactsWrapper {
@@ -408,6 +469,7 @@ form {
 
 .topParagraph {
     width: 400px;
+    font-size: large;
 }
 
 .cardPic {
@@ -443,6 +505,7 @@ form {
     line-height: 46px;
     text-align: center;
     letter-spacing: 0.05em;
+    margin: 0 0 25px 0;
 }
 
 .header4 {
@@ -494,14 +557,8 @@ form {
     margin-top: 71px;
 }
 
-@media (max-width: 1024px) {
-    .container {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
+@media (max-width: 1200px) {
     .mainSlogan {
-        background-position: right 240px;
         margin-bottom: 0;
         padding-bottom: 80px;
     }
@@ -534,10 +591,6 @@ form {
 
     .footerBottom {
         width: 75%;
-    }
-
-    .footerDescription {
-        padding-top: 47px;
     }
 
     .project_Heading {
@@ -582,10 +635,9 @@ form {
     }
 }
 
-@media (max-width: 667px) {
+@media (max-width: 790px) {
     .container {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding: 0 16px;
     }
 
     .top {
@@ -654,8 +706,14 @@ form {
         margin-top: 32px;
     }
 
-    .card {
-        width: auto;
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .universities {
+        flex-direction: column;
+        align-items: center;
     }
 
     .project_Heading {
@@ -728,7 +786,6 @@ form {
     }
 
     .footerContacts > ul > li {
-        list-style-type: decimal;
         margin-bottom: 17px;
     }
 

@@ -8,9 +8,47 @@ body {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.link-icon {
+  fill: #ffffff;
+}
+
+.link-icon:hover {
+  fill: #5a98d0;
+}
+
+.skype-icon {
+  fill: #ffffff;
+}
+
+.skype-icon:hover {
+  fill: #00aff0;
+}
+
+.github-icon {
+  fill: #ffffff;
+}
+
+.github-icon:hover {
+  fill: #000000;
+}
+
 .container {
-  max-width: 1140px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 .top {
@@ -41,12 +79,6 @@ body {
           flex-direction: column;
 }
 
-.content {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,17 +90,65 @@ header {
 }
 
 .footerTop {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 50px;
+}
+
+section.about-me .card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+section.about-me .paragraph {
+  font-size: large;
+  margin: 0 0 25px 0;
+}
+
+section.about-me .universities {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0 0 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+}
+
+section.about-me .universities .card {
+  width: 359px;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer {
@@ -118,8 +198,7 @@ footer > hr {
 }
 
 .footerDescription {
-  padding-top: 90px;
-  width: 495px;
+  width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -155,8 +234,9 @@ footer > hr {
 }
 
 .footerDescription > .header3 {
-  width: 350px;
+  width: auto;
   text-align: left;
+  margin: 0;
 }
 
 .footerBottom {
@@ -169,36 +249,48 @@ footer > hr {
   padding-bottom: 64px;
 }
 
+.footerContacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .footerContacts > ul {
+  list-style-type: none;
+  padding: 25px 0 0 0;
   font-size: 16px;
   line-height: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.footList {
-  padding-left: 19px;
-  list-style-position: outside;
+.footerContacts > ul .footList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-li.listText {
-  list-style-type: "A.";
-}
-
-li.listTelephone {
-  list-style-type: "T.";
-}
-
-li.listMail {
-  list-style-type: "E.";
+.footerContacts > ul .footList a {
+  height: 30px;
+  margin-right: 10px;
 }
 
 .mainSlogan {
@@ -209,10 +301,10 @@ li.listMail {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background-image: url(../sources/images/top-back.png);
+  background-image: url(../sources/images/itog.png);
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 44%;
+  background-position: top right;
+  background-size: 30%;
 }
 
 .cardLink {
@@ -255,10 +347,11 @@ li.listMail {
 
 .aboutCompany {
   margin-top: 64px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .what-we-do {
-  margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,6 +362,11 @@ li.listMail {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.project {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .contactsWrapper {
@@ -492,6 +590,7 @@ form {
 
 .topParagraph {
   width: 400px;
+  font-size: large;
 }
 
 .cardPic {
@@ -527,6 +626,7 @@ form {
   line-height: 46px;
   text-align: center;
   letter-spacing: 0.05em;
+  margin: 0 0 25px 0;
 }
 
 .header4 {
@@ -581,13 +681,8 @@ form {
   margin-top: 71px;
 }
 
-@media (max-width: 1024px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+@media (max-width: 1200px) {
   .mainSlogan {
-    background-position: right 240px;
     margin-bottom: 0;
     padding-bottom: 80px;
   }
@@ -618,9 +713,6 @@ form {
   }
   .footerBottom {
     width: 75%;
-  }
-  .footerDescription {
-    padding-top: 47px;
   }
   .project_Heading {
     margin-top: 100px;
@@ -661,10 +753,9 @@ form {
   }
 }
 
-@media (max-width: 667px) {
+@media (max-width: 790px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
   }
   .top {
     min-height: 376px;
@@ -729,8 +820,23 @@ form {
   .what-we-do {
     margin-top: 32px;
   }
-  .card {
-    width: auto;
+  .about-me {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .universities {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .project_Heading {
     margin-bottom: 82px;
@@ -794,7 +900,6 @@ form {
     margin-top: 32px;
   }
   .footerContacts > ul > li {
-    list-style-type: decimal;
     margin-bottom: 17px;
   }
   .sendForm {
