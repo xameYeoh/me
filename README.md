@@ -1,1 +1,1 @@
-Website for made for looking of erasmus internship
+Website to help looking for erasmus internship
