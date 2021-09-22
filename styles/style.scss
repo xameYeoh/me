@@ -19,6 +19,21 @@ a {
     }
 }
 
+.link-icon {
+    fill: #ffffff;
+    &:hover {
+        fill: #5a98d0;
+    }
+}
+
+.skype-icon{
+    fill: #ffffff;
+    &:hover{
+        fill: #00aff0;
+    }
+    
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -53,6 +68,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 section {
@@ -195,6 +211,7 @@ footer > hr {
             height: 30px;
             margin-right: 10px;
         }
+        
     }
 }
 
