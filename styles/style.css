@@ -301,10 +301,10 @@ footer > hr {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background-image: url(../sources/images/top-back.png);
+  background-image: url(../sources/images/photo_regular-bg.png);
   background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 44%;
+  background-position: top right;
+  background-size: 30%;
 }
 
 .cardLink {
