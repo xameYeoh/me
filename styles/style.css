@@ -57,7 +57,7 @@ a:active {
   background: linear-gradient(0deg, #ebf3fb 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
-.topContent {
+.top__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@ header {
   padding-top: 42px;
 }
 
-.footerTop {
+.footer__top {
   padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,7 +197,7 @@ footer > hr {
   border: 1px solid #ffffff;
 }
 
-.footerDescription {
+.footer__description {
   width: 100%;
   font-style: normal;
   font-weight: normal;
@@ -207,7 +207,7 @@ footer > hr {
   color: #ffffff;
 }
 
-.footerDescription > .paragraph {
+.footer__description > .paragraph {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -233,10 +233,11 @@ footer > hr {
   padding: 64px 0px;
 }
 
-.footerDescription > .header3 {
+.footer__description > .title {
   width: auto;
   text-align: left;
   margin: 0;
+  color: #ffffff;
 }
 
 .footerBottom {
@@ -249,7 +250,7 @@ footer > hr {
   padding-bottom: 64px;
 }
 
-.footerContacts {
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +263,7 @@ footer > hr {
           justify-content: center;
 }
 
-.footerContacts > ul {
+.contacts > ul {
   list-style-type: none;
   padding: 25px 0 0 0;
   font-size: 16px;
@@ -279,7 +280,7 @@ footer > hr {
           justify-content: space-between;
 }
 
-.footerContacts > ul .footList {
+.contacts > ul .contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,12 +289,12 @@ footer > hr {
           align-items: center;
 }
 
-.footerContacts > ul .footList a {
+.contacts > ul .contacts__list a {
   height: 30px;
   margin-right: 10px;
 }
 
-.mainSlogan {
+.top__text {
   margin-top: 115px;
   margin-bottom: 25px;
   -webkit-box-sizing: border-box;
@@ -345,13 +346,13 @@ footer > hr {
   border-radius: 10px;
 }
 
-.aboutCompany {
+.about-erasmus {
   margin-top: 64px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.what-we-do {
+.about-erasmus__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,16 +589,16 @@ form {
   opacity: 0.6;
 }
 
-.topParagraph {
+.top__paragraph {
   width: 400px;
   font-size: large;
 }
 
-.cardPic {
+.card__picture {
   margin-bottom: 50px;
 }
 
-.header1 {
+.website-about {
   width: 504px;
   color: #1f3f68;
   font-style: normal;
@@ -618,7 +619,7 @@ form {
   color: #ffffff;
 }
 
-.header3 {
+.title {
   text-align: center;
   font-style: normal;
   font-weight: 300;
@@ -627,6 +628,7 @@ form {
   text-align: center;
   letter-spacing: 0.05em;
   margin: 0 0 25px 0;
+  color: #1f3f68;
 }
 
 .header4 {
@@ -663,7 +665,7 @@ form {
   border: none;
 }
 
-.topButton {
+.button {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -682,11 +684,11 @@ form {
 }
 
 @media (max-width: 1200px) {
-  .mainSlogan {
+  .top__text {
     margin-bottom: 0;
     padding-bottom: 80px;
   }
-  .what-we-do {
+  .about-erasmus__cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -702,13 +704,13 @@ form {
   .footerButton-1 {
     padding: 8px 30px;
   }
-  .footerTop {
+  .footer__top {
     width: auto;
   }
-  .footerContacts > ul {
+  .contacts > ul {
     display: block;
   }
-  .footerContacts > ul > li {
+  .contacts > ul > li {
     margin-bottom: 25px;
   }
   .footerBottom {
@@ -766,7 +768,7 @@ form {
   header {
     padding-top: 24px;
   }
-  .mainSlogan {
+  .top__text {
     margin-top: 36px;
     margin-bottom: 0px;
     background-image: none;
@@ -782,10 +784,10 @@ form {
             align-items: center;
     padding-bottom: 0;
   }
-  .aboutCompany {
+  .about-erasmus {
     margin-top: 48px;
   }
-  .header1 {
+  .website-about {
     width: 100%;
     font-weight: 300;
     font-size: 32px;
@@ -794,20 +796,20 @@ form {
     letter-spacing: 0.04em;
     margin-bottom: 12px;
   }
-  .topParagraph {
+  .top__paragraph {
     text-align: center;
   }
-  .topContent {
+  .top__content {
     min-height: auto;
   }
-  .header3 {
+  .title {
     font-size: 24px;
     line-height: 28px;
   }
   .paragraph {
     width: 100%;
   }
-  .topButton {
+  .button {
     margin-top: 32px;
     padding: 4px 8px;
     font-style: normal;
@@ -817,7 +819,7 @@ form {
     text-align: center;
     color: #ffffff;
   }
-  .what-we-do {
+  .about-erasmus__cards {
     margin-top: 32px;
   }
   .about-me {
@@ -868,18 +870,18 @@ form {
   footer {
     margin-top: 64px;
   }
-  .footerTop {
+  .footer__top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footerDescription {
+  .footer__description {
     width: auto;
     text-align: center;
     padding-top: 18px;
   }
-  .footerDescription > .header3 {
+  .footer__description > .title {
     text-align: center;
     width: 100%;
   }
@@ -899,7 +901,7 @@ form {
   .footerBottom {
     margin-top: 32px;
   }
-  .footerContacts > ul > li {
+  .contacts > ul > li {
     margin-bottom: 17px;
   }
   .sendForm {
