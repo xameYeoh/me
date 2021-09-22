@@ -37,6 +37,14 @@ a:active {
   fill: #00aff0;
 }
 
+.github-icon {
+  fill: #ffffff;
+}
+
+.github-icon:hover {
+  fill: #000000;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
