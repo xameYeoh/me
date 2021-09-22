@@ -26,15 +26,15 @@ a {
     }
 }
 
-.skype-icon{
+.skype-icon {
     fill: #ffffff;
-    &:hover{
+    &:hover {
         fill: #00aff0;
     }
 }
-.github-icon{
+.github-icon {
     fill: #ffffff;
-    &:hover{
+    &:hover {
         fill: #000000;
     }
 }
@@ -181,12 +181,12 @@ footer > hr {
 
 .footer__description > .title {
     width: auto;
-    text-align: left;
+    text-align: center;
     margin: 0;
     color: #ffffff;
 }
 
-.footerBottom {
+.footer__bottom {
     width: 100%;
     margin-top: 64px;
 }
@@ -217,7 +217,6 @@ footer > hr {
             height: 30px;
             margin-right: 10px;
         }
-        
     }
 }
 
@@ -232,7 +231,7 @@ footer > hr {
     background-size: 30%;
 }
 
-.cardLink {
+.card__link {
     margin-top: 30px;
     font-style: normal;
     font-weight: normal;
@@ -241,15 +240,6 @@ footer > hr {
     letter-spacing: 0.05em;
     color: #5a98d0;
     text-decoration: none;
-}
-
-.companyDescription {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 46px;
-    text-align: center;
-    letter-spacing: 0.05em;
 }
 
 .card {
@@ -274,114 +264,6 @@ footer > hr {
     justify-content: space-between;
 }
 
-.project {
-    box-sizing: border-box;
-}
-
-.contactsWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 96px;
-
-    .contacts {
-        padding-top: 78px;
-
-        img {
-            margin-bottom: 14px;
-        }
-
-        .contacts-Items {
-            .contacts-item {
-                margin-top: 40px;
-
-                ul {
-                    list-style-position: inside;
-                    list-style-type: none;
-
-                    li {
-                        margin-bottom: 16px;
-                        background-repeat: no-repeat;
-                        padding-left: 40px;
-                        line-height: 20px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.contactsHeader {
-    text-align: center;
-    background-image: url(../images/ContactUs.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 50px 0px 57px;
-}
-
-.ContactUsParagraph {
-    margin-top: 16px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    /* or 150% */
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.contactsWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 96px;
-}
-
-.mapWrapper {
-    width: 100%;
-    height: 480px;
-    display: flex;
-
-    iframe {
-        flex-grow: 1;
-    }
-}
-
-.contacts-item > h4 {
-    margin-bottom: 24px;
-    text-transform: uppercase;
-}
-
-li.site {
-    background-image: url(../images/web.svg);
-}
-
-li.phone {
-    background-image: url(../images/phone.svg);
-}
-
-li.email {
-    background-image: url(../images/mail.svg);
-}
-
-.sendForm {
-    background: #ffffff;
-    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    padding: 56px 56px;
-    h4 {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: 0.04em;
-        color: #1f3f68;
-        text-transform: uppercase;
-    }
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -397,65 +279,6 @@ form {
     opacity: 0.8;
     margin-top: 32px;
     margin-bottom: 8px;
-}
-
-.projectImages {
-    margin-top: 32px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.project_Image {
-    width: 100%;
-}
-
-.image_Text {
-    top: 64px;
-    right: 64px;
-    text-align: right;
-}
-
-.image_Text_mini {
-    left: 32px;
-    top: 32px;
-    right: auto;
-    text-align: left;
-}
-
-.image_Text,
-.image_Text_mini {
-    position: absolute;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 46px;
-    letter-spacing: 0.05em;
-    color: #ffffff;
-}
-
-.projectItem {
-    position: relative;
-    flex-grow: 1;
-}
-
-.project_Heading {
-    margin-top: 64px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #222222;
-    margin-bottom: 64px;
-}
-
-.project_Heading > p {
-    margin-top: 32px;
-}
-
-.margin_Item {
-    margin-right: 32px;
 }
 
 .paragraph {
@@ -488,16 +311,6 @@ form {
     margin-bottom: 32px;
 }
 
-.header2 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 44px;
-    line-height: 74px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-}
-
 .title {
     text-align: center;
     font-style: normal;
@@ -510,36 +323,12 @@ form {
     color: #1f3f68;
 }
 
-.header4 {
+.card__title {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #1f3f68;
     margin-bottom: 14px;
-}
-
-.inputElems {
-    border: 1px solid #356ead;
-    box-sizing: border-box;
-    border-radius: 10px;
-    opacity: 0.4;
-    padding: 21px 42px;
-}
-
-.subButton {
-    margin-top: 72px;
-    background: #5a98d0;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    /* shadow1 */
-    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
-    padding: 23px 183px;
-    border: none;
 }
 
 .button {
@@ -575,10 +364,6 @@ form {
         margin-bottom: 32px;
     }
 
-    .footerButton-1 {
-        padding: 8px 30px;
-    }
-
     .footer__top {
         width: auto;
     }
@@ -591,37 +376,8 @@ form {
         margin-bottom: 25px;
     }
 
-    .footerBottom {
+    .footer__bottom {
         width: 75%;
-    }
-
-    .project_Heading {
-        margin-top: 100px;
-    }
-
-    .image_Text_mini,
-    .image_Text {
-        font-size: 28px;
-    }
-
-    .contactsWrapper {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 64px;
-    }
-
-    .mapWrapper {
-        width: auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .sendForm {
-        margin-top: 64px;
-    }
-
-    .contactsHeader {
-        margin: 46px 0px 64px;
     }
 
     footer {
@@ -630,10 +386,6 @@ form {
 
     .contacts {
         padding-top: 0;
-    }
-
-    .contacts-Items {
-        width: 301px;
     }
 }
 
@@ -718,35 +470,6 @@ form {
         align-items: center;
     }
 
-    .project_Heading {
-        margin-bottom: 82px;
-        margin-top: 30px;
-    }
-
-    .projectImages {
-        margin-top: 16px;
-        flex-direction: column;
-    }
-
-    .margin_Item {
-        margin-bottom: 16px;
-        margin-right: 0;
-    }
-
-    .image_Text {
-        font-size: 16px;
-        line-height: 19px;
-        top: 16px;
-        right: 16px;
-    }
-
-    .image_Text_mini {
-        font-size: 16px;
-        line-height: 19px;
-        top: 26px;
-        left: 16px;
-    }
-
     footer {
         margin-top: 64px;
     }
@@ -766,81 +489,15 @@ form {
         width: 100%;
     }
 
-    .footerButton-1 {
-        padding: 8px 15px;
-    }
-
-    .footerLinks {
-        margin-top: 27px;
-    }
-
     footer > hr {
         margin-top: 41px;
     }
 
-    .AllRightsReserved {
-        text-align: center;
-        padding: 20px 0px 32px;
-    }
-
-    .footerBottom {
+    .footer__bottom {
         margin-top: 32px;
     }
 
     .contacts > ul > li {
         margin-bottom: 17px;
-    }
-
-    .sendForm {
-        padding: 36px 36px;
-        box-sizing: border-box;
-        width: 100%;
-    }
-
-    .subButton {
-        padding: 10px 60px;
-        margin-top: 46px;
-    }
-
-    .mapWrapper {
-        width: auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .header2 {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 28px;
-    }
-
-    .ContactUsParagraph {
-        font-size: 16px;
-        line-height: 30px;
-        text-align: center;
-        margin-top: 32px;
-    }
-
-    .contactsHeader {
-        margin: 46px 0px;
-    }
-
-    .sendForm > h4 {
-        font-size: 16px;
-        line-height: 30px;
-    }
-
-    .form-text {
-        font-size: 14px;
-        line-height: 30px;
-        margin-bottom: 0;
-    }
-
-    .contactsWrapper {
-        margin-bottom: 32px;
-    }
-
-    footer.contacts-footer {
-        margin-top: 32px;
     }
 }
