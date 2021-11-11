@@ -1,0 +1,501 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.link-icon {
+  fill: #ffffff;
+}
+.link-icon:hover {
+  fill: #5a98d0;
+}
+
+.skype-icon {
+  fill: #ffffff;
+}
+.skype-icon:hover {
+  fill: #00aff0;
+}
+
+.github-icon {
+  fill: #ffffff;
+}
+.github-icon:hover {
+  fill: #000000;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.top {
+  min-height: 768px;
+  background: linear-gradient(0deg, #ebf3fb 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.top__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 768px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 42px;
+}
+
+.footer__top {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+section.about-me .card {
+  width: fit-content;
+}
+section.about-me .paragraph {
+  font-size: large;
+  margin: 0 0 25px 0;
+}
+section.about-me .universities {
+  width: 100%;
+  display: flex;
+  padding: 50px 0 0 0;
+  justify-content: space-between;
+}
+section.about-me .universities .card {
+  width: 359px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  background: #316099;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.footerLinks {
+  align-self: center;
+}
+
+.footerButton-1 {
+  background: #5a98d0;
+  padding: 15px 80px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer > hr {
+  margin-top: 96px;
+  width: auto;
+  opacity: 0.4;
+  /* white */
+  border: 1px solid #ffffff;
+}
+
+.footer__description {
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.footer__description > .paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  letter-spacing: 0.05em;
+  /* white */
+  color: #ffffff;
+  opacity: 0.6;
+  padding-top: 32px;
+}
+
+.AllRightsReserved {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  letter-spacing: 0.05em;
+  /* white */
+  color: #ffffff;
+  opacity: 0.6;
+  padding: 64px 0px;
+}
+
+.footer__description > .title {
+  width: auto;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+}
+
+.footer__bottom {
+  width: 100%;
+  margin-top: 64px;
+}
+
+.rightsReserved {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts > ul {
+  list-style-type: none;
+  padding: 25px 0 0 0;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts > ul .contacts__list {
+  display: flex;
+  align-items: center;
+}
+.contacts > ul .contacts__list a {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.top__text {
+  margin-top: 115px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  background-image: url(../sources/images/itog.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 30%;
+}
+
+.card__link {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5a98d0;
+  text-decoration: none;
+}
+
+.card {
+  width: 359px;
+  padding: 44px 32px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+}
+
+.about-erasmus {
+  margin-top: 64px;
+  box-sizing: border-box;
+}
+
+.about-erasmus__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1f3f68;
+  opacity: 0.8;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 26px;
+  color: #1f3f68;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+}
+
+.top__paragraph {
+  width: 400px;
+  font-size: large;
+}
+
+.card__picture {
+  margin-bottom: 50px;
+}
+
+.website-about {
+  width: 504px;
+  color: #1f3f68;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  margin-bottom: 32px;
+}
+
+.title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin: 0 0 25px 0;
+  color: #1f3f68;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #1f3f68;
+  margin-bottom: 14px;
+}
+
+.button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #5a98d0;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  padding: 15px 50px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 71px;
+}
+
+@media (max-width: 1200px) {
+  .top__text {
+    margin-bottom: 0;
+    padding-bottom: 80px;
+  }
+
+  .about-erasmus__cards {
+    flex-direction: column;
+    margin-top: 64px;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 32px;
+  }
+
+  .footer__top {
+    width: auto;
+  }
+
+  .contacts > ul {
+    display: block;
+  }
+
+  .contacts > ul > li {
+    margin-bottom: 25px;
+  }
+
+  .footer__bottom {
+    width: 75%;
+  }
+
+  footer {
+    margin-top: 64px;
+  }
+
+  .contacts {
+    padding-top: 0;
+  }
+}
+@media (max-width: 790px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .top {
+    min-height: 376px;
+    padding-bottom: 41px;
+    box-sizing: border-box;
+  }
+
+  header {
+    padding-top: 24px;
+  }
+
+  .top__text {
+    margin-top: 36px;
+    margin-bottom: 0px;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .about-erasmus {
+    margin-top: 48px;
+  }
+
+  .website-about {
+    width: 100%;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+  }
+
+  .top__paragraph {
+    text-align: center;
+  }
+
+  .top__content {
+    min-height: auto;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+
+  .button {
+    margin-top: 32px;
+    padding: 4px 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .about-erasmus__cards {
+    margin-top: 32px;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .universities {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    margin-top: 64px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__description {
+    width: auto;
+    text-align: center;
+    padding-top: 18px;
+  }
+
+  .footer__description > .title {
+    text-align: center;
+    width: 100%;
+  }
+
+  footer > hr {
+    margin-top: 41px;
+  }
+
+  .footer__bottom {
+    margin-top: 32px;
+  }
+
+  .contacts > ul > li {
+    margin-bottom: 17px;
+  }
+}
