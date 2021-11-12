@@ -326,6 +326,10 @@ footer > hr {
   width: 100%;
 }
 
+.bullet-points .first {
+  margin: 0 0 25px;
+}
+
 .about-erasmus,
 .bullet-points {
   margin-top: 64px;
