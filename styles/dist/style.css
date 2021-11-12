@@ -243,6 +243,11 @@ footer > hr {
 .bullet-points .first {
   margin: 0 0 25px;
 }
+.bullet-points .hard-skills {
+  margin: 25px 0 0;
+  display: flex;
+  justify-content: center;
+}
 
 .about-erasmus,
 .bullet-points {
