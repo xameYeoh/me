@@ -121,25 +121,10 @@ footer {
     align-self: center;
 }
 
-.footerButton-1 {
-    background: #5a98d0;
-    padding: 15px 80px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    /* identical to box height, or 162% */
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    text-decoration: none;
-}
-
 footer > hr {
     margin-top: 96px;
     width: auto;
     opacity: 0.4;
-    /* white */
     border: 1px solid #ffffff;
 }
 
@@ -253,12 +238,25 @@ footer > hr {
     border-radius: 10px;
 }
 
-.about-erasmus {
+.bullet-points {
+    width: 100%;
+    .first {
+        margin: 0 0 25px;
+    }
+    .hard-skills {
+        margin: 25px 0 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.about-erasmus,
+.bullet-points {
     margin-top: 64px;
     box-sizing: border-box;
 }
 
-.about-erasmus__cards {
+.cards_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -354,7 +352,7 @@ form {
         padding-bottom: 80px;
     }
 
-    .about-erasmus__cards {
+    .cards_container {
         flex-direction: column;
         margin-top: 64px;
         align-items: center;
@@ -414,7 +412,8 @@ form {
         padding-bottom: 0;
     }
 
-    .about-erasmus {
+    .about-erasmus,
+    .bullet-points {
         margin-top: 48px;
     }
 
@@ -456,7 +455,7 @@ form {
         color: #ffffff;
     }
 
-    .about-erasmus__cards {
+    .cards_container {
         margin-top: 32px;
     }
 
